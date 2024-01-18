@@ -6,6 +6,7 @@ function wordsArr(){
         return word.trim()
     })
     return words
-}
+};
+
 
 module.exports = wordsArr
