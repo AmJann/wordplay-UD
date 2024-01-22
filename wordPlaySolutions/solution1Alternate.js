@@ -1,12 +1,12 @@
-const wordsArr = require('../helper')
+const wordsArr = require("../helper");
 
-const words = wordsArr()
+const words = wordsArr();
 
 //using includes
 
 for (let i = 0; i < words.length; i++) {
-    let word = words[i]
-    if (word.includes("UU")) {
-        console.log(word);
-    }
+  let word = words[i];
+  if (word.includes("UU")) {
+    console.log(word);
+  }
 }
