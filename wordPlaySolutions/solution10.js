@@ -12,3 +12,6 @@ for(let i = 0; i < words.length; i++){
     }
   }
 }
+
+// The problem is pretty vague on handling duplicate vowels. 
+// My solution does find all vowels in alpabetical order but does not account for duplicate vowels.

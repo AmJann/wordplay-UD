@@ -1,4 +1,4 @@
-   const wordsArr = require('../helper.js');
+const wordsArr = require('../helper.js');
 const words = wordsArr();
 
 // letters that never appear consecutively in an English word
