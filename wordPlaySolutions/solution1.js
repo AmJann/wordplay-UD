@@ -13,6 +13,7 @@ for(let i=0; i< words.length; i++){
     for(let j=0; j < splitWord.length; j++){
         if(splitWord[j] === "U" && splitWord[j +1] === "U"){
             console.log(words[i])
+            break
         }
     }
 }
