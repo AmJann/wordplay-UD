@@ -5,7 +5,7 @@ const words = wordsArr()
 
 
 for(let i = 0; i < words.length; i++){
-    let word = words[i].split('')
+    let word = words[i]
 
   if(word.includes('A') && word.includes('E') && word.includes('I') && word.includes('O') && word.includes('U')){
     console.log(words[i])

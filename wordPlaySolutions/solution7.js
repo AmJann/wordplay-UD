@@ -4,8 +4,9 @@ const words = wordsArr()
 // words that both start and end with a Y
 
 for(let i=0; i < words.length; i++){
-        if(words[i].charAt(0) === "Y" && words[i].charAt(words[i].length-1)=== "Y"){
-            console.log(words[i])
+    let word = words[i]
+        if(word.charAt(0) === "Y" && word.charAt(word.length-1)=== "Y"){
+            console.log(word)
         }
     
 }

@@ -6,10 +6,12 @@ let palindromeArr =[]
 let longestPalindrome;
 
 for( let i  = 0; i < words.length; i++){
-    let splitWord = words[i].split('')
+    let word = words[i]
+    let splitWord = word.split('')
     let reverseWord = splitWord.slice().reverse()
+
     if(splitWord.join() === reverseWord.join()){
-        palindromeArr.push(words[i])
+        palindromeArr.push(word)
     }
 
 }

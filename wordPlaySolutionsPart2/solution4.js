@@ -1,12 +1,16 @@
 const wordsArr = require('../helper.js');
 const words = wordsArr();
 
+//longest word that contains no vowels
+
 let noVowelsArr = []
 let longestWord;
 
 for( let i = 0; i < words.length; i ++){
-    if( !words[i].includes('A') && !words[i].includes('E') && !words[i].includes('I') && !words[i].includes('O') && !words[i].includes('U') && !words[i].includes('Y')){
-        noVowelsArr.push(words[i])
+    let word = words[i]
+    
+    if( !word.includes('A') && !word.includes('E') && !word.includes('I') && !word.includes('O') && !word.includes('U') && !word.includes('Y')){
+        noVowelsArr.push(word)
     }
 }
 

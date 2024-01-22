@@ -5,8 +5,8 @@ const words = wordsArr()
 //using includes
 
 for (let i = 0; i < words.length; i++) {
-
-    if (words[i].includes("UU")) {
-        console.log(words[i]);
+    let word = words[i]
+    if (word.includes("UU")) {
+        console.log(word);
     }
 }

@@ -9,6 +9,7 @@ let countZ =0
 let least;
 for( let i =0; i < words.length; i ++){
     let splitWord = words[i].split('')
+    
     for(let j =0; j< splitWord.length; j++){
         if(splitWord[j] === 'Q'){
             countQ++

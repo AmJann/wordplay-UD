@@ -6,9 +6,10 @@ const words = wordsArr();
 let answerArr = []
 
 for( let i =0; i < words.length; i++){
-   const splitWord = words[i].split('')
-    if( splitWord[words[i].length -1] === "Y" && splitWord[words[i].length -2] === "L" && splitWord[words[i].length -3] === "T" && splitWord[words[i].length -4] === "H" && splitWord[words[i].length -5] === "G"  ){
-        answerArr.push(words[i])
+    let word = words[i]
+   const splitWord = word.split('')
+    if( splitWord[word.length -1] === "Y" && splitWord[word.length -2] === "L" && splitWord[word.length -3] === "T" && splitWord[word.length -4] === "H" && splitWord[word.length -5] === "G"  ){
+        answerArr.push(word)
     }
 }
 

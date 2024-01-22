@@ -7,8 +7,9 @@ let wordsWithVowelsArr = []
 let shortestWord;
 
 for(let i =0; i < words.length; i ++){
-    if(words[i].includes('A') && words[i].includes('E') && words[i].includes('I') && words[i].includes('O') && words[i].includes('U')){
-        wordsWithVowelsArr.push(words[i])
+    let word = words[i]
+    if(word.includes('A') && word.includes('E') && word.includes('I') && word.includes('O') && word.includes('U')){
+        wordsWithVowelsArr.push(word)
     }
 }
 
