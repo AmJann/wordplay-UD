@@ -1,4 +1,4 @@
-# Underdog Developers Wordplay Problems
+# Underdog Developers Wordplay Solutions
 
 ### Code Organization
 The code solutions are organized into two parts/folders. Each folder contains one section of the wordplay problems.
