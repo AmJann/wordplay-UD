@@ -7,14 +7,8 @@ let answerArr = [];
 
 for (let i = 0; i < words.length; i++) {
   let word = words[i];
-  const splitWord = word.split("");
-  if (
-    splitWord[word.length - 1] === "Y" &&
-    splitWord[word.length - 2] === "L" &&
-    splitWord[word.length - 3] === "T" &&
-    splitWord[word.length - 4] === "H" &&
-    splitWord[word.length - 5] === "G"
-  ) {
+
+  if (word.endsWith("GHTLY")) {
     answerArr.push(word);
   }
 }
