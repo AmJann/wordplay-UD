@@ -12,7 +12,7 @@ The wordplay problems were completed using Node v20.11.0 in Visual Studio Code.
 
 ### How to run the code
 
-1. clone the git repository directly from Github
+1. Clone the git repository directly from Github
 2. Run in the code editor of your choice using Node. If you don't have Node you can download it here [Node Dowload](https://nodejs.org/en/download)
 3. Run solutions using `node ./fileName.js`
 
