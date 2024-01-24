@@ -12,8 +12,8 @@ The wordplay problems were completed using Node v20.11.0 in Visual Studio Code.
 
 ### How to run the code
 
-1. Clone the git repository directly from Github
-2. Run in the code editor of your choice using Node. If you don't have Node you can download it here [Node Dowload](https://nodejs.org/en/download)
+1. Clone the git repository directly from Github.
+2. Run in the code editor of your choice using Node. If you don't have Node you can download it here [Node Download](https://nodejs.org/en/download)
 3. Run solutions using `node ./fileName.js`
 
    _ex._ `node wordPlaySolutionsPart2/solution7.js`
