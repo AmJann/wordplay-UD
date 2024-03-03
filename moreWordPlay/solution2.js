@@ -3,44 +3,37 @@
 const wordsArr = require("../helper.js");
 const words = wordsArr();
 
-// function onlyE(char) {
+// function onlyE(letter) {
 //   return (
-//     !["A", "I", "O", "U"].includes(char.toUpperCase()) &&
-//     ["E"].includes(char.toUpperCase())
+//     !["A", "I", "O", "U"].includes(letter.toUpperCase()) &&
+//     ["E"].includes(letter.toUpperCase())
 //   );
 // }
 
-function isVowel(char) {
-  return ["A", "E", "I", "O", "U"].includes(char.toUpperCase());
+function isVowel(letter) {
+  return ["A", "E", "I", "O", "U"].includes(letter.toUpperCase());
 }
 
-function onlyEAndFifteenCharacters(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    let splitString = arr[i].split("");
+function onlyEAndFifteenCharacters(words) {
+  for (const word of words) {
+    let letters = word.split("");
+    let wordContainsOnlyEs = true;
 
-    if (splitString.length >= 15) {
-      let map = new Map();
+    if (letters.length !== 15) {
+      continue;
+    }
 
-      for (let j = 0; j < splitString.length; j++) {
-        let char = splitString[j];
-
-        if (isVowel(char) && !map.has(char)) {
-          map.set(char, 1);
-        } else if (isVowel && map.has(char)) {
-          map.set(char, map.get(char) + 1);
-        }
-        if (map.size > 1) {
-          break;
-        }
+    for (const letter of letters) {
+      if (isVowel(letter) && letter !== "E") {
+        wordContainsOnlyEs = false;
+        break;
       }
+    }
 
-      if (map.size === 1 && map.has("E")) {
-        console.log(arr[i]);
-      }
+    if (wordContainsOnlyEs) {
+      console.log(word);
     }
   }
 }
 
 onlyEAndFifteenCharacters(words);
-
-function onlyEAndFifteenCharacters2(arr) {}
