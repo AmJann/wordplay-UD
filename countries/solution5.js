@@ -72,6 +72,7 @@ function checkForCountriesWithSameVowel(arr) {
       } else if (isVowel(letter)) {
         obj[letter]++;
       }
+      console.log(object);
       return obj;
     }, {});
 
@@ -83,7 +84,7 @@ function checkForCountriesWithSameVowel(arr) {
   console.log(countriesWithSameVowel);
 }
 
-// checkForCountriesWithSameVowel(countries);
+checkForCountriesWithSameVowel(countries);
 
 function hasOnlyOneVowel(country) {
   const lowerCaseCountry = country.toLowerCase();

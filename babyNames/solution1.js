@@ -68,7 +68,7 @@ function shortestBabyName(arr) {
 // console.log(shortestBabyName2(names));
 
 //HW: find all of the shortest names in baby names without iterating more than once
-
+//prince
 function shortestBabyName3(arr) {
   let shortestNames = [arr[0]];
 
@@ -76,8 +76,7 @@ function shortestBabyName3(arr) {
     let name = arr[i];
 
     if (name.length < shortestNames[0].length) {
-      shortestNames = [];
-      shortestNames.push(name);
+      shortestNames = [name];
     } else if (name.length === shortestNames[0].length) {
       shortestNames.push(name);
     }
@@ -85,21 +84,29 @@ function shortestBabyName3(arr) {
   return shortestNames;
 }
 
-console.log(shortestBabyName3(names));
+// console.log(shortestBabyName3(names));
 
 /*HW:Homework on hashmaps.
 Use the MDN doc that I sent you to learn the following
-How to create an empty hashmap.
-How to create a hashmap with key value pairs.
-How to add key value pairs to an empty hashmap.
-How check if a key exists in a hashmap.
+How to create an empty hashmap. (use the new Map method)
+How to create a hashmap with key value pairs. 
+How to add key value pairs to an empty hashmap. map.set(key,value)
+How check if a key exists in a hashmap. (use has)
 How to check if a value exists in a hashmap.
 How to retrieve a value from a hashmap.
 How to remove a key value pair from a hashmap.
 How to update a value when given a key in a hashmap.*/
 
 let map = new Map();
+let map2 = new Map([
+  ["orange", 11],
+  ["apple", 10],
+  ["pear", 15],
+]);
 
-map.set("a", true);
-
-// console.log(map);
+map2.set("squash", 7).set("banana", 8);
+console.log(map2.has("orange"));
+console.log(map2.get("apple"));
+// map2.delete("banana");
+map2.set("apple", 11);
+console.log(map2);
